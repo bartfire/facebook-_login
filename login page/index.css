@@ -1,0 +1,284 @@
+/* General styles for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+}
+
+/* Styles for form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"], button {
+    width: 100%;
+    max-width: 332px; /* Ensure the maximum width is consistent */
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    box-sizing: border-box; /* Make sure padding is included in the width */
+}
+
+/* Style for buttons */
+button {
+    color: white;
+    cursor: pointer;
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 1.2; 
+    padding: 14px 16px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 
+                200ms cubic-bezier(.08,.52,.52,1) box-shadow, 
+                200ms cubic-bezier(.08,.52,.52,1) transform;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-color: #297fee;
+}
+
+/* Input focus styles */
+input[type="text"], input[type="password"] {
+    border: 1px solid #ddd;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #0866ff; /* Border color when focused */
+    outline: none; /* Remove default outline */
+    caret-color: #0866ff; /* Caret color */
+}
+
+/* Styles for the forgot password link */
+form a {
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Horizontal rule style */
+hr {
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(44, 43, 43, 0.192); 
+}
+
+/* Create new account button */
+form .btn1 {
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    width: 50%;
+}
+
+/* Password container */
+.password-container {
+    position: relative;
+    align-items: center;
+}
+
+.password-container input[type="password"], 
+.password-container input[type="text"] {
+    width: 100%;
+    padding-right: 40px; /* Ensure there's space for the eye icon */
+}
+
+.password-container img {
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 14px;
+    right: 40px;
+    top: 16px;
+    align-items: center;
+    display: none; /* Initially hide the icon */
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 20px 10px; /* Adjust padding for better fit */
+        margin: 20px 0; /* Adjust margin for better alignment */
+    }
+
+    input[type="text"], input[type="password"], button {
+        max-width: none; 
+        padding: 12px 14px; 
+    }
+
+    .password-container img {
+        width: 20px; 
+        height: 20px;
+        right: 10px; 
+    }
+
+    form .btn1 {
+        width: 80%; 
+    }
+}
+/* General styles for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+}
+
+/* Styles for form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"], button {
+    width: 100%;
+    max-width: 332px; /* Ensure the maximum width is consistent */
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    box-sizing: border-box; /* Make sure padding is included in the width */
+}
+
+/* Style for buttons */
+button {
+    color: white;
+    cursor: pointer;
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 1.2; 
+    padding: 14px 16px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 
+                200ms cubic-bezier(.08,.52,.52,1) box-shadow, 
+                200ms cubic-bezier(.08,.52,.52,1) transform;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-color: #297fee;
+}
+
+/* Input focus styles */
+input[type="text"], input[type="password"] {
+    border: 1px solid #ddd;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #0866ff; 
+    outline: none; 
+    caret-color: #0866ff; 
+}
+
+/* Styles for the forgot password link */
+form a {
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Horizontal rule style */
+hr {
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(44, 43, 43, 0.192); 
+}
+
+/* Create new account button */
+form .btn1 {
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    width: 50%;
+}
+
+/* Password container */
+.password-container {
+    position: relative;
+    align-items: center;
+}
+
+.password-container input[type="password"], 
+.password-container input[type="text"] {
+    width: 100%;
+    padding-right: 40px; /* Ensure there's space for the eye icon */
+}
+
+.password-container img {
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 14px;
+    right: 40px;
+    top: 16px;
+    align-items: center;
+    display: none; /* Initially hide the icon */
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px 10px; 
+        margin: 20px 0; 
+    }
+
+    input[type="text"], input[type="password"], button {
+        max-width: none; 
+        padding: 12px 14px; 
+    }
+
+    .password-container img {
+        width: 20px; 
+        height: 20px;
+        right: 10px; 
+    }
+
+    form .btn1 {
+        width: 80%; 
+    }
+}
